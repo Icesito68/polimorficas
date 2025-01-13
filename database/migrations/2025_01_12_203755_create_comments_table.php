@@ -16,6 +16,7 @@ return new class extends Migration
             $table->text("body");
             $table->integer("commentable_id");
             $table->string("commentable_type");
+            $table->timestamps();
         });
     }
 
