@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('videos', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('comment_id')->nullable()->constrained('comments')->onDelete('cascade');
+            // $table->foreignId('comment_id')->nullable()->constrained('comments')->onDelete('cascade');
             $table->string(column: "name");
             $table->timestamps();
         });
